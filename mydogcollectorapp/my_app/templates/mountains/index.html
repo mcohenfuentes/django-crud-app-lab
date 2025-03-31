@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/mountains/mountain-index.css' %}"
+/>
+{% endblock %} {% block content %}
+
+<section class="page-header">
+  <h1>Mountain List</h1>
+  <img
+    src="{% static 'images/mountain1.svg' %}"
+    alt="A pretty mountain"
+  />
+  <img
+    src="{% static 'images/mountain2.svg' %}"
+    alt="A cold mountain"
+  />
+  <img
+    src="{% static 'images/mountain3.svg' %}"
+    alt="A cat in a teacup"
+  />
+</section>
+
+<section class="card-container">
+  {% for mountain in mountains %}
+  <div class="card">
+    <div class="card-content">
+      <div class="card-img-container">
+        <img
+          src="{% static 'images/mountain3.svg' %}"
+          alt="A skater boy cat"
+        />
+      </div>
+      <h2 class="card-title">{{ mountain.name }}</h2>
+      <h2 class="card-title">{{ mountain.location }}</h2>
+      <h2 class="card-title">{{ mountain.description }}</h2>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
