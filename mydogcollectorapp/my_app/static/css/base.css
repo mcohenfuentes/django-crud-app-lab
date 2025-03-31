@@ -52,6 +52,17 @@ html {
     background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
     border-bottom: var(--borders);
   }
+
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--nav-bg-ff);
+    border-bottom: var(--borders);
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
   
   nav {
     margin: 10px;
