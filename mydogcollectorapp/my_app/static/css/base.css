@@ -19,6 +19,7 @@ html {
   }
   
   body {
+    background-color: #e6f0f3;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -27,9 +28,9 @@ html {
       'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
       'Helvetica Neue', sans-serif;
     min-height: 100vh;
-    --nav-bg: rgba(104, 197, 248, 0.7);
-    --nav-bg-ff: rgba(104, 197, 248, 0.9);
-    --borders: rgb(36, 116, 248) solid 2px;
+    --nav-bg: rgba(173, 216, 230, 0.9); /* light blue */
+    --nav-bg-ff: rgba(173, 216, 230, 1);
+    --borders:   rgb(7, 76, 7) solid 2px;
     --text-color: rgb(17, 20, 17);
     --link-hover-color: rgb(16, 56, 158);
     --button-bg: rgb(245, 245, 245);
@@ -77,6 +78,7 @@ html {
   main {
     width: 100%;
     padding: 0 10px;
+    background-color: #e6f0f3;
   }
   
   h2 {
@@ -106,9 +108,18 @@ html {
   }
   
   .header-logo-container {
-    margin: auto;
-    padding: 10px 20px 0;
-    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    height: 70px;
+  }
+
+  .header-logo-container img {
+    height: 90px;
+  width: auto;
+  display: block;
+  
   }
   
   .page-header {
@@ -261,10 +272,11 @@ html {
     }
   
     .header-logo-container {
-      /* visual fix to help align logo */
-      padding-top: 6px;
-      width: 256px;
-      height: 35px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        height: auto;
+        width: auto;
     }
   
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
