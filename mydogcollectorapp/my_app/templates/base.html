@@ -16,14 +16,14 @@
     <header>
         <div class="header-bar">
       <div class="header-logo-container">
-        <a href="/">
+        <a href="{% url 'home' %}">
           <img src="{% static 'images/header-logo.svg' %}" alt="The Mountain Collector Logo" />
         </a>
       </div>
       <nav>
         <ul>
-          <li><a href="/mountains">All Mountains</a></li>
-          <li><a href="/about">About</a></li>
+          <li><a href="{% url 'mountain-index' %}">All Mountains</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
         </ul>
       </nav>
       </div>

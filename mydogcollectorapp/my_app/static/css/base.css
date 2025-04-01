@@ -106,17 +106,18 @@ html {
   nav li {
     padding: 5px 8px;
   }
+
+
   
   .header-logo-container {
+    height: auto; /* match image height */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
-    height: 70px;
+    padding: 0 20px; /* remove vertical padding so the logo sits flush */
   }
 
   .header-logo-container img {
-    height: 90px;
+    height: 100px;
   width: auto;
   display: block;
   
@@ -184,14 +185,14 @@ html {
     font-size: var(--font-reg);
   }
   
-  @media only screen and (min-width: 768px) {
+  /* @media only screen and (min-width: 768px) {
     header {
       position: sticky;
       display: flex;
       flex-direction: row;
       top: 0;
       align-items: center;
-    }
+    } */
   
     main {
       max-width: 1300px;

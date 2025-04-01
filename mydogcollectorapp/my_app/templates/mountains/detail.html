@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/cats/cat-detail.css' %}" />
+{% endblock %} 
+{% block content %}
+<section class="cat-container">
+  <div class="cat-img">
+    <img src="{% static 'images/mountain1.svg' %}" alt="A mountain" />
+  </div>
+  <div class="mountain-details">
+    <h2 class="card-title">{{ mountain.name }}</h2>
+      <h2 class="card-title">{{ mountain.location }}</h2>
+      <h2 class="card-title">{{ mountain.description }}</h2>
+  </div>
+</section>
+{% endblock %}
