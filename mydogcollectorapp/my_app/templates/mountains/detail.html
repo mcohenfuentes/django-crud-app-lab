@@ -12,6 +12,11 @@
     <h2 class="card-title">{{ mountain.name }}</h2>
       <h2 class="card-title">{{ mountain.location }}</h2>
       <h2 class="card-title">{{ mountain.description }}</h2>
+
+      <div class="mountain-actions">
+        <a href="{% url 'mountain-update' mountain.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'mountain-delete' mountain.id %}" class="btn danger">Delete</a>
+      </div>
   </div>
 </section>
 {% endblock %}
